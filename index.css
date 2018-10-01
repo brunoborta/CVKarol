@@ -1,0 +1,83 @@
+/* Basic Style */
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+h2, a {
+    color: #fd5959;
+}
+
+i {
+    color: #495057;
+}
+
+ul {
+    list-style: circle outside none;
+    padding-left: 2em;
+}
+
+/* Header Section */
+
+.profile-image {
+    width: 7em;
+    height: 7em;
+}
+
+header, section, footer {
+    padding-top: 2em;
+}
+
+header > div:first-child, header > div:last-child {
+    margin-top: 10px;
+}
+
+.location {
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+/* Timeline */
+
+.timeline-item {
+	padding: 3em 3em 2em;
+	position: relative;
+	color: rgba(0, 0, 0, .7);
+	border-left: 2px solid rgba(0, 0, 0, .3);
+}
+
+.timeline-item:before {
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    font-weight: 700;
+    font-size: .785rem;
+}
+
+.timeline-item:after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -6px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid rgba(0, 0, 0, .3);
+    background: white;
+}
+
+.timeline-item:last-child {
+    border-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .3) 60%,
+        rgba(0,0,0,0)) 1 100%
+    ;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+}
